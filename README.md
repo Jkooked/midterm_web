@@ -33,3 +33,4 @@ HTML5, CSS3, Bootstrap **5.3.3**, Google Fonts, and a small JavaScript file for 
 
 
 ## Link of the website
+### https://jkooked.github.io/midterm_web/
