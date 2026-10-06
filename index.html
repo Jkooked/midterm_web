@@ -1,154 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Agency</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header class="custop header">
-        <nav class="flex-nav container">
-            <div class="logo">
-                <a href="index.html" class="brand-link">FLY FUN<span>.</span></a>
-            </div>
-            <ul class="nav-list">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="tours.html" class="nav-link">Tours</a></li>
-                <li><a href="gallery.html" class="nav-link">Gallery</li>
-                <li><a href="contacts.html" class="nav-link">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main> <!-- main content-->
-        <section class="hero-section py-5 text-white"> <!--hero section-->
-            <div class="container text-center py-5">
-                <h1 class="display-3 fw-bold mb-3">Welcome to FLY FUN.</h1>
-                <p class="lead b-4 mx-auto" style="max-width: 600px;">
-                    Discover your next adventure with our exclusive travel packages.
-                </p>
-                <a href="tours.html" class="btn btn-primary btn-lg px-4 me-md-2">Explore Tours</a>
-                <a href="contacts.html" class="btn btn-outline-light btn-lg px-4">Contact Us</a>
-            </div>
-        </section>
-        <!-- bootstrap grid -->
-        <section class="container py-5">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Popular Destinations</h2>
-                <p class="text-secondary">Explore our most sought-after travel destinations.</p>
-            </div>
-            <div class="row g-4">
-                 <div class=" col-12 col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm brder-0 destination-card">
-                        <img
-                        src="images.jpeg"
-                        class="card-img-top"
-                        alt="Tropical Beach"
-                        loading="lazy"
-                        >
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Tropical Beach</h5>
-                            <p class="card-text text-secondary">
-                                Relax on the pristine sands and soak up the sun in paradise.
-                            </p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FLY FUN | Travel Agency</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="custom-header">
+            <nav class="flex-nav container" aria-label="Main navigation">
+                <div class="logo">
+                    <a href="index.html" class="brand-link">FLY FUN<span>.</span>
+                    </a>
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="tours.html" class="nav-link">Tours</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html" class="nav-link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--main content-->
+            <section class="hero-section py-5 text-white">
+                <!--hero section-->
+                <div class="container text-center py-5">
+                    <h1 class="display-3 fw-bold mb-3">Welcome to FLY FUN.</h1>
+                    <p class="lead mb-4 mx-auto hero-description">Discover your next adventure with our exclusive travel packages.</p>
+                    <a href="tours.html" class="btn btn-primary btn-lg px-4 me-md-2">Explore Tours</a>
+                    <a href="contacts.html" class="btn btn-outline-light btn-lg px-4">Contact Us</a>
+                </div>
+            </section>
+            <!--bootstrap grid-->
+            <section class="container py-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Popular Destinations</h2>
+                    <p class="text-secondary">Explore our most sought-after travel destinations.</p>
+                </div>
+                <div class="row g-4">
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 destination-card">
+                            <img src="images.jpeg" class="card-img-top" alt="Tropical Beach" loading="lazy">
+                            <div class="card-body">
+                                <h3 class="h5 card-title fw-bold">Tropical Beach</h3>
+                                <p class="card-text text-secondary">Relax on the pristine sands and soak up the sun in paradise.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <a href="tours.html" class="btn btn-outline-primary w-100">View Tours</a>
+                            </div>
                         </div>
-
-                        <div class="card-footer bg-transparant border-0 pb-3">
-                            <a href="tours.html" class="btn btn-outline-primary w-100">View Tours</a>
+                    </div>
+                    <!--Destination Card 2-->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 destination-card">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=600&amp;q=80" class="card-img-top" alt="Alpine Mountains" loading="lazy">
+                            <div class="card-body">
+                                <h3 class="h5 card-title fw-bold">Alpine Escapes</h3>
+                                <p class="card-text text-secondary">Experience majestic mountain trails, scenic views, and serene alpine lakes.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <a href="tours.html" class="btn btn-outline-primary w-100">View Tours</a>
+                            </div>
                         </div>
                     </div>
-                 </div>
-                <!-- Destination Card 2 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0 destination-card">
-                    <img 
-                    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" 
-                    class="card-img-top" 
-                    alt="Alpine Mountains" 
-                    loading="lazy"
-                    >
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Alpine Escapes</h5>
-                        <p class="card-text text-secondary">Experience majestic mountain trails, scenic views, and serene alpine lakes.</p>
-                    </div>
-                    <div class="card-footer bg-transparent border-0 pb-3">
-                        <a href="packages.html" class="btn btn-outline-primary w-100">View Tours</a>
+                    <!--Destination Card 3-->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 destination-card">
+                            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&amp;fit=crop&amp;w=600&amp;q=80" class="card-img-top" alt="Historic European City" loading="lazy">
+                            <div class="card-body">
+                                <h3 class="h5 card-title fw-bold">Historic Cities</h3>
+                                <p class="card-text text-secondary">Immerse yourself in rich culture, iconic architecture, and vibrant city nightlife.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <a href="tours.html" class="btn btn-outline-primary w-100">View Tours</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-                <!-- Destination Card 3 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm border-0 destination-card">
-                <img 
-                src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=600&q=80" 
-                class="card-img-top" 
-                alt="Historic European City" 
-                loading="lazy"
-                >
-            <div class="card-body">
-                <h5 class="card-title fw-bold">Historic Cities</h5>
-                <p class="card-text text-secondary">Immerse yourself in rich culture, iconic architecture, and vibrant city nightlife.</p>
-            </div>
-            <div class="card-footer bg-transparent border-0 pb-3">
-                <a href="packages.html" class="btn btn-outline-primary w-100">View Tours</a>
-            </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-    <footer class="bg-daark text-white py-5 mt-auto">
-        <div class="container">
-            <div class="row gy-4">
-                <!--col1--> 
-                <div class="col-12 col-md-4">
-                    <h5 class="fw-bold text-primary mb-3">FLY FUN.</h5>
-                    <p class="text-secondary small">
-                        Discover our ready to go tours and travel packages, designed to make your dream vacation a reality. 
-                    </p>
+            </section>
+        </main>
+        <footer class="site-footer bg-dark text-white py-5 mt-auto">
+            <div class="container">
+                <div class="row gy-4">
+                    <!--col1-->
+                    <div class="col-12 col-md-4">
+                        <h2 class="h5 fw-bold text-primary mb-3">FLY FUN.</h2>
+                        <p class="text-secondary small">Discover our ready to go tours and travel packages, designed to make your dream vacation a reality.</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h2 class="h5 fw-bold mb-3">Quick Links</h2>
+                        <ul class="list-unstyled footer-links">
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="tours.html">Tours</a>
+                            </li>
+                            <li>
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h2 class="h5 fw-bold mb-3">Contact Us</h2>
+                        <p class="mb-1 text-secondary small">100 Mangilik El Street</p>
+                        <p class="mb-1 text-secondary small">
+                            <a class="contact-link" href="mailto:funfly-travel@gmail.com">funfly-travel@gmail.com</a>
+                        </p>
+                        <p class="mb-3 text-secondary small">
+                            <a class="contact-link" href="tel:+77778889900">+7 777 888 99 00</a>
+                        </p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/" aria-label="Facebook website">Facebook</a>
+                            <a href="https://x.com/" aria-label="Twitter website">Twitter</a>
+                            <a href="https://www.instagram.com/" aria-label="Instagram website">Instagram</a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-12 col-md4">
-                    <h5 class="fw-bold mb-3">Quick Links </h5>
-                    <ul class="list-unstyled footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="tours.html">Tours</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contacts.html">Contacts</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-12 col-md4">
-                    <h5 class="fw-bold md-3">Contact Us</h5>
-                    <p class="mb-1 text-secondary small"> 100 Mangilik El Street</p>
-                    <p class="mb-1 text-secondary small"> funfly-travel@gmail.com</p>
-                    <p class="mb-3 text-secondary small"> +7 777 888 99 00</p>
-                     
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">Facebook</a>
-                        <a href="#" aria-label="Twitter">Twitter</i></a>
-                        <a href="#" aria-label="Instagram">Instagram</a>
-                     </div>
+                <hr class="my-4 border-secondary">
+                <div class="text-center small text-secondary">
+                    <p class="mb-0">© 2026 FLY FUN. All rights reserved.</p>
                 </div>
             </div>
-             <hr class="my-4 border-secondary">
-            <div class="text-center small text-secondary">
-                <p class="mb-0">&copy; 2026 FLY FUN. All rights reserved.</p>
-            </div>
-        </div>
-
-        
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

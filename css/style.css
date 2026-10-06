@@ -1,0 +1,268 @@
+:root {
+    --primary-color: #0077b6;
+    --secondary-color: #00b4d8;
+    --dark-color: #34495e;
+    --light-color: #ecf0f1;
+
+    --font-main: "Outfit", sans-serif;
+}
+body {
+    font-family: var(--font-main);
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--dark-color);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-main);
+    font-weight: 700;
+}
+p {
+    font-family: var(--font-main);
+    font-weight: 400;
+}
+.custom-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+}
+.flex-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.brand-link {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    text-decoration: none;
+}
+.brand-link span {
+    color: var(--primary-color);
+
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+.nav-link {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--primary-color);
+}
+.nav-link.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a,
+.social-links a,
+.contact-link {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus,
+.social-links a:hover,
+.social-links a:focus,
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--secondary-color);
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.site-footer .text-secondary {
+    color: #adb5bd !important;
+}
+
+.site-footer .text-primary {
+    color: var(--secondary-color) !important;
+}
+
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+.site-footer a:focus-visible,
+.hero-section a:focus-visible {
+    outline-color: var(--secondary-color);
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    padding: 6rem 0;
+}
+
+.hero-description {
+    max-width: 600px;
+}
+
+.guide-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+#booking-form {
+    scroll-margin-top: 8rem;
+}
+
+#booking-feedback {
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}
+
+.custom-table tbody tr:nth-child(even) > * {
+    --bs-table-bg: var(--light-color);
+}
+
+/* Destination Card Enhancements */
+.destination-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+.destination-card img {
+    height: 220px;
+    object-fit: cover;
+}
+/* Custom CSS Grid Gallery */
+.custom-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+    color: #fff;
+    padding: 1rem 0.75rem 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* Tablet: keep the logo above a compact, wrapping navigation menu. */
+@media (max-width: 767.98px) {
+    .flex-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.75rem 0.75rem;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.25rem 1rem;
+        width: 100%;
+    }
+}
+
+/* Mobile: reduce spacing and let the gallery fit narrow viewports. */
+@media (max-width: 575.98px) {
+    .brand-link {
+        font-size: 1.5rem;
+    }
+
+    .nav-list {
+        gap: 0.25rem 0.75rem;
+    }
+
+    .nav-link {
+        font-size: 0.875rem;
+        padding: 0.25rem 0;
+    }
+
+    .hero-section .container {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .hero-section .btn {
+        margin-bottom: 0.5rem;
+    }
+
+    .custom-gallery-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1rem;
+    }
+
+    .social-links {
+        gap: 0.5rem 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .nav-link,
+    .footer-links a,
+    .social-links a,
+    .destination-card,
+    .gallery-card img {
+        transition: none;
+    }
+
+    .destination-card:hover,
+    .gallery-card:hover img {
+        transform: none;
+    }
+}
