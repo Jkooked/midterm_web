@@ -1,6 +1,9 @@
 # FLY FUN — Travel Agency
+
 ## Group: IT-2502
-## Members: Saida Kh. , Karima M. , Ainaz A.
+
+## Members: Saida Kh., Karima M., Ainaz A.
+
 FLY FUN is an educational travel agency website created for the Midterm Project. Visitors can learn about the agency, explore destinations, compare tour prices, and complete a demo booking form. The project focuses on travel and tourism, and the website interface is in English.
 
 ## Team Members and Individual Contributions
@@ -31,6 +34,94 @@ Each member should be able to explain the entire project, including the pages an
 
 HTML5, CSS3, Bootstrap **5.3.3**, Google Fonts, and a small JavaScript file for the demo form. Bootstrap is included locally in `css/bootstrap.min.css`; all custom styles are in `css/style.css`. No build process or npm installation is required.
 
+## Website Screenshots
 
-## Link of the website
-### https://jkooked.github.io/midterm_web/
+These screenshots show the current project rendered locally in a browser.
+
+### Home
+
+The home page introduces FLY FUN and displays destination cards in a responsive Bootstrap layout.
+
+![Home page with the hero section and destination cards](screenshots/site/home.jpg)
+
+### About
+
+The about page presents the agency, its mission, and guide profiles.
+
+![About page with agency information and guide profiles](screenshots/site/about.jpg)
+
+### Tours
+
+The tours page compares four travel packages and links each Book Now button to the booking form.
+
+![Tours page with the pricing comparison table](screenshots/site/tours.jpg)
+
+### Gallery
+
+The gallery displays travel photographs and captions in a CSS Grid layout.
+
+![Gallery page with travel photographs and captions](screenshots/site/gallery.jpg)
+
+### Contacts
+
+The contacts page contains the demo booking form with labeled fields and native HTML validation.
+
+![Contacts page with the demo booking form](screenshots/site/contacts.jpg)
+
+## Code Examples
+
+The following screenshots show excerpts from the project source and their visible results.
+
+### 1. Bootstrap Grid
+
+In `index.html`, `col-12 col-md-6 col-lg-4` gives each destination card the full row on small screens, half the row on medium screens, and one third of the row on large screens. See the destination cards in the [Home screenshot](#home).
+
+![HTML source for the responsive Bootstrap destination cards](screenshots/code/bootstrap-grid.png)
+
+### 2. CSS Grid
+
+In `css/style.css`, `.custom-gallery-grid` uses `repeat(auto-fit, minmax(280px, 1fr))` to arrange photographs in columns that fit the available space. See the [Gallery screenshot](#gallery).
+
+![CSS source for the photo gallery grid](screenshots/code/css-grid.png)
+
+### 3. Flexbox Navigation
+
+The header and `.nav-list` use Flexbox to align the logo and navigation links. The links can wrap when space is limited. See the header in the [Home screenshot](#home).
+
+![CSS source for the shared Flexbox header and navigation](screenshots/code/flexbox-navigation.png)
+
+### 4. Alternating Table Rows
+
+The selector `.custom-table tbody tr:nth-child(even) > *` applies a different background to every second table row, making the tour comparison easier to read. See the table in the [Tours screenshot](#tours).
+
+![CSS source for alternating tour table row colors](screenshots/code/alternating-table.png)
+
+### 5. Visible Keyboard Focus
+
+The `:focus-visible` rules add an outline to links and buttons during keyboard navigation.
+
+![CSS source for visible keyboard focus outlines](screenshots/code/focus-visible.png)
+
+The booking form button below has keyboard focus.
+
+![Booking form button with a visible keyboard focus outline](screenshots/site/focus-button.jpg)
+
+### 6. Responsive Layout
+
+Media queries at `767.98px` and `575.98px` adjust the header, navigation, spacing, and gallery for smaller screens.
+
+![CSS source for tablet and mobile layout adjustments](screenshots/code/responsive-layout.png)
+
+At a viewport width of **390 pixels**, the gallery uses a single column and the logo sits above the navigation menu.
+
+![Gallery page rendered at a 390-pixel mobile viewport](screenshots/site/mobile-gallery.jpg)
+
+## How to Open
+
+Open the live website: [FLY FUN](https://jkooked.github.io/midterm_web/).
+
+Repository: [Jkooked/midterm_web](https://github.com/Jkooked/midterm_web).
+
+## Demo Form
+
+The booking form validates input and displays a local preview. It does not send requests, save submissions, or confirm bookings. Contact details are for demonstration purposes, and the social links lead to the platforms' homepages.
