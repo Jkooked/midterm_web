@@ -9,8 +9,8 @@ Our team has three members: **Karima, Saida, and Ainaz**. Responsibilities are a
 
 | Team Member | Pages and Responsibilities |
 | --- | --- |
-| **Karima** | Home (`index.html`) and About (`about.html`): the hero section, destination cards, agency information, and guide profiles; the shared header and footer, Flexbox navigation, typography, and basic styling. |
-| **Saida** | Tours (`tours.html`) and Contacts (`contacts.html`): the tour pricing table, booking form with labels and required fields, email validation, automatic tour selection, and a local booking request preview. |
+| **Saida** | Home (`index.html`) and About (`about.html`): the hero section, destination cards, agency information, and guide profiles; the shared header and footer, Flexbox navigation, typography, and basic styling. |
+| **Karima** | Tours (`tours.html`) and Contacts (`contacts.html`): the tour pricing table, booking form with labels and required fields, email validation, automatic tour selection, and a local booking request preview. |
 | **Ainaz** | Gallery (`gallery.html`): the CSS Grid photo gallery and captions; tablet and mobile responsiveness, hover and focus effects, README documentation, and preparation for deployment. |
 
 Each member should be able to explain the entire project, including the pages and code assigned to other members.
